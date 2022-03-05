@@ -17,17 +17,24 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 1px 0 rgba(17, 17, 17, 0.1);
   padding: 22px 51px;
+  @media (max-width: 45rem) {
+    padding: 22px;
+    justify-content: center;
+  }
 }
 .logo {
-  width: 175px;
+  max-width: 175px;
   height: 32px;
+  @media (max-width: 45rem) {
+    display: none;
+  }
 }
 .nav {
   display: flex;
@@ -45,6 +52,9 @@ header {
   max-height: 32px;
   width: 100%;
   height: 100%;
+  @media (max-width: 45rem) {
+    display: none;
+  }
 }
 .nav_link {
   font-family: 'Montserrat', sans-serif;

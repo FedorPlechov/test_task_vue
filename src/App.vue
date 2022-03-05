@@ -4,6 +4,7 @@
 
 <script>
 import ThePersonalData from "@/components/personalData/ThePersonalData";
+
 export default {
   name: 'App',
   components: {
@@ -21,7 +22,8 @@ export default {
   font-family: 'Montserrat', sans-serif;
 }
 html {
-height: 100%;
+  height: 100%;
+  width: 100vw;
 }
 body {
   height: 100%;
@@ -29,7 +31,6 @@ body {
 #app {
   display: grid;
   grid-template-rows: 76px 1fr 76px ;
-  margin: auto;
   width: 100%;
   height: 100%;
 }

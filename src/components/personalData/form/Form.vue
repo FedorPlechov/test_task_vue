@@ -28,16 +28,21 @@ export default {
   methods: {
     saveInformation() {
       this.save = !this.save;
+      alert('Сохранено');
     }
   }
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .form {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  height: 100%;
+    @media (max-width: 45rem) {
+      padding: 22px;
+    }
 }
 
 .container {
@@ -56,7 +61,7 @@ export default {
   background: #01A7FD;
   font-size: 14px;
   color: white;
-  min-width: 118px;
+  max-width: 118px;
   cursor: pointer;
 }
 

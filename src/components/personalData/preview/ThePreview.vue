@@ -34,12 +34,15 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .container_data {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  min-height: 616px;
+  max-height: 616px;
+  @media (max-width: 45rem) {
+    padding: 22px;
+  }
 }
 
 .container {

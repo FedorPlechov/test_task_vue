@@ -14,7 +14,7 @@
       <div v-for="child of children" :key="child.id" class="container_row">
         <BaseInput v-model="child.name"
                    label="Имя" margin-right="18px"
-                   type="number"/>
+                   />
         <BaseInput v-model="child.age"
                    label="Возраст"
                    margin-right="18px"
@@ -60,7 +60,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .container_column {
   display: flex;
   flex-direction: column;
@@ -86,6 +86,9 @@ h3:last-of-type {
   justify-content: flex-start;
   width: 100%;
   align-items: center;
+  @media (max-width: 45rem) {
+    flex-direction: column;
+  }
 }
 
 .add_new_child {
@@ -98,6 +101,9 @@ h3:last-of-type {
   color: #01A7FD;
   min-width: 210px;
   cursor: pointer;
+  @media (max-width: 45rem) {
+    margin-bottom: 10px;
+  }
 }
 
 .add_new_child:active {
